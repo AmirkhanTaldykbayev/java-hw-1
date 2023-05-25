@@ -14,26 +14,38 @@ public class Main {
 //        System.out.println("Факториалом чилса " + num + " является: " + triangleFactorial.getFactorial(num));
 
         // Задание 2. Нахождение простых чисел от 1 до 1000.
-        System.out.println("Введите число, до которого хотите определить все простые числа: ");
-        int number = scan.nextInt();
-        System.out.println("Простыми числами до числа " + number + " являются: ");
+        //System.out.println("Введите число, до которого хотите определить все простые числа: ");
+        //int number = scan.nextInt();
+        //System.out.println("Простыми числами до числа " + number + " являются: ");
 
-        int i, j;
-        boolean check;
+//        int i, j;
+//        boolean check;
+//
+//        for (i = 2; i < number; i++) {
+//            check = true;
+//            for (j = 2; j < i; j++) {
+//                if ((i % j) == 0) {
+//                    check = false;
+//                    break;
+//                }
+//            }
+//
+//            if (check) {
+//                System.out.println(i + " ");
+//
+//            }
+//        }
 
-        for (i = 2; i < number; i++) {
-            check = true;
-            for (j = 2; j < i; j++) {
-                if ((i % j) == 0) {
-                    check = false;
-                    break;
-                }
-            }
+        // Задание 3. Реализовать простой калькулятор
+        System.out.println("Введите первое число: ");
+        double first = scan.nextDouble();
+        System.out.println("Введите оператор (+, -, *, /) : ");
+        char operator = scan.next().charAt(0);
+        System.out.println("Введите второе число: ");
+        double second = scan.nextDouble();
 
-            if (check) {
-                System.out.println(i + " ");
+        Calculator calc = new Calculator();
 
-            }
-        }
+        double result = calc.Calculate(first, operator, second);
     }
 }
