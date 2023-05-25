@@ -1,20 +1,21 @@
 package org.example;
 
 public class SimpleNumbers {
-    //    public int[] simpleNum(int number) {
-//        int[] result = new int[]{};
-//        int i, j;
-//        for (i = 1; i <= number; i++) {
-//            boolean isSimple = true;
-//            for (j = 2; j < i; j++) {
-//                if (i % j == 0) {
-//                    isSimple = false;
-//                    break;
-//                }
-//            }
-//            result[i] = i;
-//        }
-//        return result;
-//    }
+    public String simpleNum(int number) {
+        String result = "";
+        int num = 0;
+        for (int i = 1; i <= number; i++) {
+            int counter = 0;
+            for (num = i; num >= 1; num--) {
+                if (i % num == 0) {
+                    counter = counter + 1;
+                }
+            }
+            if (counter == 2) {
+                result = result + i + " ";
+            }
+        }
+        return result;
+    }
 
 }
