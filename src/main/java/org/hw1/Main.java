@@ -23,6 +23,8 @@ public class Main {
 
         SimpleNumbers simNum = new SimpleNumbers();
         System.out.println(simNum.simpleNum(number));
+        
+        // UPD. Все получилось.
 
         //----------------------------------------------------------------------------------------
 
