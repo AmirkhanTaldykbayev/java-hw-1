@@ -16,9 +16,16 @@ import java.util.Arrays;
 public class SQL_Request {
 
     public String human(String str) {
-        str.split(",");
-        String[] split = str.split(":");
+        String[] splits = str.split(",");
+
         StringBuilder builder = new StringBuilder();
+
+        for (String item : splits) {
+            String[] parts = item.split(":");
+            if (!(splits.equals("null"))) {
+                builder.append(Arrays.toString(splits));
+            }
+        }
 
         return builder.toString();
     }
