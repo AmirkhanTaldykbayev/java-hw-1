@@ -1,4 +1,4 @@
-package org.example;
+package org.hw1;
 
 public class Triangle_Factorial {
     public int getTriangle(int number) {

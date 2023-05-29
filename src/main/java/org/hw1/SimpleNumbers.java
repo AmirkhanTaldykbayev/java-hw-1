@@ -1,4 +1,4 @@
-package org.example;
+package org.hw1;
 
 public class SimpleNumbers {
     public String simpleNum(int number) {

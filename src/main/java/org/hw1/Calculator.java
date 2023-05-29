@@ -1,4 +1,4 @@
-package org.example;
+package org.hw1;
 
 public class Calculator {
     public double Calculate(double num1, char ch, double num2) {
