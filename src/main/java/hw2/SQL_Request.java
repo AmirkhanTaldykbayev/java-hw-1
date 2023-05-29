@@ -22,9 +22,21 @@ public class SQL_Request {
 
         for (String item : splits) {
             String[] parts = item.split(":");
-            if (!(splits.equals("null"))) {
-                builder.append(Arrays.toString(splits));
+
+            for (String word : parts) {
+                if (!word.equals("\"null\"")) {
+                    builder.append(word);
+                }
+
             }
+
+
+//            for (int i = 0; i < parts.length; i++) {
+//                if (i == 1 && !equals("null")) {
+//                    builder.append(Arrays.toString(parts));
+//                }
+//            }
+
         }
 
         return builder.toString();
