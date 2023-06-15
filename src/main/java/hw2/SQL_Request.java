@@ -16,30 +16,20 @@ import java.util.Arrays;
 public class SQL_Request {
 
     public String human(String str) {
-        String[] splits = str.split(",");
 
         StringBuilder builder = new StringBuilder();
 
-        for (String item : splits) {
-            String[] parts = item.split(":");
+        String[] splits = str.split(",");
 
-            for (String word : parts) {
-                if (!word.equals("\"null\"")) {
-                    builder.append(word);
-                }
-
+        for (int i = 0; i < splits.length; i++) {
+            String[] parts = splits[i].split(":");
+            if (!parts[1].equals("\"null\"") ) {
+                builder.append(parts[1]);
             }
-
-
-//            for (int i = 0; i < parts.length; i++) {
-//                if (i == 1 && !equals("null")) {
-//                    builder.append(Arrays.toString(parts));
-//                }
-//            }
-
         }
 
-        return builder.toString();
+
+        return builder.toString().replace('"',' ');
     }
 }
 
