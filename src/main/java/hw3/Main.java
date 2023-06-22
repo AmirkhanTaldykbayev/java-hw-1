@@ -1,7 +1,8 @@
 package hw3;
 
-
 import hw3.solutions.Task1;
+import hw3.solutions.Task2;
+import hw3.solutions.Task3;
 
 import java.util.Arrays;
 
