@@ -17,7 +17,7 @@ public class Main {
         int[] numsArray = Task1.generateArray();
         System.out.println(Arrays.toString(numsArray));
         Task1.sort(numsArray, 0, numsArray.length - 1);
-        System.out.println(Arrays.toString(numsArray));
+
 
 /*
 *************************************************************************************************
