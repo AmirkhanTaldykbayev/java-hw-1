@@ -1,6 +1,7 @@
 package hw4;
 
 
+import hw4.Solutions.StackTask;
 import hw4.Solutions.Task1;
 
 
@@ -16,5 +17,9 @@ public class Main {
         // Надеюсь такая работа считается)
 
         Task1.run();
+
+        // (✔решено) 4*. Реализовать стэк с помощью массива. Нужно реализовать методы: size(), empty(), push(),
+        // peek(), pop().
+        StackTask.run();
     }
 }

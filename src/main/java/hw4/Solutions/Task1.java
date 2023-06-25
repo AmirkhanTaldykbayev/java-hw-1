@@ -46,7 +46,6 @@ public class Task1 {
                     break;
                 default:
                     list1.add(cLine[0]);
-
             }
         }
     }
