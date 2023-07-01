@@ -11,6 +11,9 @@ public class Main {
         //Переопределить toString, equals и hashCode.
         //Вывести на печать экземпляры класса, сравнить пару экземпляров и найти один экземпляр в наборе.
 
+
+        //Прошу прощения за такое количество строчек кода.
+
         Laptop hpVictus16a = new Laptop(1, "HP Victus", 16.1f, "AMD Ryzen 5 5600H", (short) 8, (short) 500, "Nvidia RTX 3060", "MS DOS", "dark-blue");
         System.out.println(hpVictus16a);
         System.out.println();
