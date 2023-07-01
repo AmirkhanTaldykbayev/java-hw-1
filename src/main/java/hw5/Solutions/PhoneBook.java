@@ -3,7 +3,7 @@ package hw5.Solutions;
 import java.util.*;
 
 public class PhoneBook {
-    private static HashMap<String, List<Integer>> pb = new HashMap<>();
+    private static HashMap<String, List<Long>> pb = new HashMap<>();
 
     public static void run() {
         boolean flag = true;
@@ -24,12 +24,12 @@ public class PhoneBook {
                 case "ADD":
                     for (String s : split) {
                         if (!pb.containsKey(split[1])) {
-                            List<Integer> phoneList = new ArrayList<>();
-                            phoneList.add(Integer.parseInt(split[2]));
+                            List<Long> phoneList = new ArrayList<>();
+                            phoneList.add(Long.parseLong(split[2]));
                             pb.put(split[1], phoneList);
                             break;
                         } else {
-                            pb.get(split[1]).add(Integer.parseInt(split[2]));
+                            pb.get(split[1]).add(Long.parseLong(split[2]));
                             break;
                         }
                     }
@@ -48,8 +48,8 @@ public class PhoneBook {
         return in.nextLine();
     }
 
-    public static void printPhoneBook(HashMap<String, List<Integer>> pb){
-        for (Map.Entry<String, List<Integer>> item : pb.entrySet()) {
+    public static void printPhoneBook(HashMap<String, List<Long>> pb){
+        for (Map.Entry<String, List<Long>> item : pb.entrySet()) {
             System.out.println(item.getKey() + " - " + item.getValue());
         }
     }
